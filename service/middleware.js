@@ -1,8 +1,8 @@
 
 var user = {};
 
-// var AdminController = require('../controllers/auth/admin');
-// var UserController = require('../controllers/auth/user')
+ var AdminController = require('../controllers/auth/admin');
+ var UserController = require('../controllers/auth/user')
 
 
 

@@ -7,11 +7,14 @@ var usersRouter=require('./user')
 
 const middleware = require('../../service/middleware').middleware;
 
+const UserController=require('../../controllers/auth/user');
+const adminController=require('../../controllers/auth/admin');
 
+router.post('/user/register',UserController.register);
+router.post('/user/login',UserController.login);
 
-
-
-
+router.post('/admin/register',adminController.register);
+router.post('/admin/login',adminController.login);
 
 
 
